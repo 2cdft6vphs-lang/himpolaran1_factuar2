@@ -1,7 +1,7 @@
 print("===================================")
 print("      REGISTRATION FORM")
 print("===================================")
-# Ask for the user's full name
+
 while True:
     name = input("Enter your full name: ")
     if name.strip() == "":
@@ -10,7 +10,6 @@ while True:
         print("Error: Name must contain letters only!")
     else:
         break
-# Ask for age
 while True:
     age = input("Enter your age: ")
     if not age.isdigit():
@@ -20,28 +19,28 @@ while True:
     else:
         age = int(age)
         break
-# Ask for email
+
 while True:
     email = input("Enter your email: ")
     if "@" in email and "." in email.split("@")[-1] and " " not in email:
         break
     else:
         print("Error: Please enter a valid email!")
-# Ask for phone number
+
 while True:
     phone = input("Enter your phone number: ")
     if phone.isdigit() and len(phone) in (10, 11):
         break
     else:
         print("Error: Phone number must have 10 or 11 digits!")
-# Ask for username
+
 while True:
     username = input("Create a username: ")
     if len(username) >= 4 and " " not in username:
         break
     else:
         print("Error: Username must have at least 4 characters and no spaces!")
-# Ask for password
+
 while True:
     password = input("Create a password: ")
     if len(password) >= 8:
@@ -52,7 +51,7 @@ while True:
             print("Error: Passwords do not match!")
     else:
         print("Error: Password must have at least 8 characters!")
-# Display registration details
+
 print("\\n===================================")
 print("     REGISTRATION SUCCESSFUL!")
 print("===================================")
@@ -63,4 +62,4 @@ print("Phone Number:", phone)
 print("Username:", username)
 print("Password: [Hidden]")
 print("===================================")
-print("Thank you for registering!")
+print("Thank you for registering!") 
